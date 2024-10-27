@@ -109,7 +109,7 @@ def mover_csv(repositorio, arquivos):
         gravar_log(mensagem, arquivos)
 
     except Exception as e:
-        mensagem = 'Erro ao processar mover_csv: ' + str(e)
+        mensagem = 'Erro ao mover_csv: ' + str(e)
         print(mensagem)
         gravar_log(mensagem, arquivos)
         raise e
@@ -151,7 +151,7 @@ def mover_pdf(repositorio, arquivos):
         gravar_log(mensagem, arquivos)
 
     except Exception as e:
-        mensagem = 'Erro ao processar mover_pdf: ' + str(e)
+        mensagem = 'Erro ao mover_pdf: ' + str(e)
         print(mensagem)
         gravar_log(mensagem, arquivos)
         raise e
@@ -212,7 +212,7 @@ def excluir_pastas_vazias(repositorio, arquivos):
         gravar_log(mensagem, arquivos)
 
     except Exception as e:
-        mensagem = 'Erro ao processar excluir_pastas_vazias: ' + str(e)
+        mensagem = 'Erro ao excluir_pastas_vazias: ' + str(e)
         print(mensagem)
         gravar_log(mensagem, arquivos)
         raise e
