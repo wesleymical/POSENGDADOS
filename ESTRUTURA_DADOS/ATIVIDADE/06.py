@@ -24,11 +24,14 @@ def gravar_log(mensagem, diretorio_log):
     with open(os.path.join(diretorio_log, 'log-06.txt'), 'a') as log_file:
         log_file.write(mensagem + '\n')
 
-# arquivos de download
+# Arquivos de download
 arquivos = dict_diretorio['.zip']
 
-#repositorio de extracao
+# Repositorio de extracao
 repositorio = dict_diretorio['.csv']
+
+# Repositorio para "outros" arquivos
+outros = 'D:/mical/Documents/POS ENGENHARIA DE DADOS/MATERIAS/ED/ATIVIDADE/OUTROS'
 
 #=== MAIN ==============================================================================================
 # Função principal
@@ -42,7 +45,7 @@ def main():
     # 2 - Descompactar os arquivos
     descompactar_arquivos(repositorio, arquivos)
     # 3 - Mover arquivos CSV
-    mover_csv(repositorio, arquivos)
+    mover_csv(repositorio, arquivos, outros)
     # 4 - Mover arquivos PDF
     mover_pdf(repositorio, arquivos)
     # 5 - Excluir pastas vazias
@@ -54,7 +57,7 @@ def main():
 
 #=== SUB FUNCOES =======================================================================================
 # Função para mover arquivos csv
-def mover_csv(repositorio, arquivos):
+def mover_csv(repositorio, arquivos, outros):
     try:
         mensagem = "Função: mover_csv - Inicio - " + str(datetime.datetime.now().strftime("%H:%M:%S"))
         print(mensagem)
@@ -86,7 +89,7 @@ def mover_csv(repositorio, arquivos):
                             if 'Outros' not in list_uf:
                                 list_uf.append('Outros')
                             if 'Outros' not in dict_diretorio:
-                                dict_diretorio['Outros'] = 'D:/mical/Documents/POS ENGENHARIA DE DADOS/MATERIAS/ED/ATIVIDADE/OUTROS'
+                                dict_diretorio['Outros'] = outros
 
                             diretorio_uf = os.path.join(dict_diretorio['Outros'], uf)
 
