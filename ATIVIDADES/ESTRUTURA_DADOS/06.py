@@ -14,7 +14,7 @@ list_uf = [
 
 # Dicionário de diretórios por tipo de arquivo
 dict_diretorio = {
-    '.csv': 'C/Users/mical/Documents/POSENGDADOS/REPOSITORIO/ESTRUTURA_DADOS',
+    '.csv': 'C:/Users/mical/Documents/POSENGDADOS/REPOSITORIO/ESTRUTURA_DADOS',
     '.zip': 'C:/Users/mical/Documents/POSENGDADOS/ARQUIVOS/ESTRUTURA_DADOS',
     '.pdf': 'C:/Users/mical/Documents/POSENGDADOS/REPOSITORIO/ESTRUTURA_DADOS',
     'outros': 'C:/Users/mical/Documents/POSENGDADOS/REPOSITORIO/ESTRUTURA_DADOS/OUTROS'
@@ -27,7 +27,7 @@ def gravar_log(mensagem, diretorio_log):
             log_file.write(mensagem + '\n')
     except Exception as e:
         print('Erro ao gravar_log: ' + str(e))
-    raise e
+        raise e
 
 # Arquivos de download
 arquivos = dict_diretorio['.zip']
