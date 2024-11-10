@@ -14,10 +14,10 @@ list_uf = [
 
 # Dicionário de diretórios por tipo de arquivo
 dict_diretorio = {
-    '.csv': 'C:/Users/mical/Documents/POSENGDADOS/REPOSITORIO/ESTRUTURA_DADOS',
-    '.zip': 'C:/Users/mical/Documents/POSENGDADOS/ARQUIVOS/ESTRUTURA_DADOS',
-    '.pdf': 'C:/Users/mical/Documents/POSENGDADOS/REPOSITORIO/ESTRUTURA_DADOS',
-    'outros': 'C:/Users/mical/Documents/POSENGDADOS/REPOSITORIO/ESTRUTURA_DADOS/OUTROS'
+    '.csv': 'D:/mical/Documents/POS ENGENHARIA DE DADOS/MATERIAS/ED/ATIVIDADE',
+    '.zip': 'D:/mical/Documents/POS ENGENHARIA DE DADOS/MATERIAS/ED/ARQUIVOS',
+    '.pdf': 'D:/mical/Documents/POS ENGENHARIA DE DADOS/MATERIAS/ED/ATIVIDADE',
+    'outros': 'D:/mical/Documents/POS ENGENHARIA DE DADOS/MATERIAS/ED/ATIVIDADE/OUTROS'
 }
 
 # Função para gravar logs em log.txt
