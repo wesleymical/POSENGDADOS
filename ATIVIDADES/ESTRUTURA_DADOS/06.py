@@ -22,8 +22,12 @@ dict_diretorio = {
 
 # Função para gravar logs em log.txt
 def gravar_log(mensagem, diretorio_log):
-    with open(os.path.join(diretorio_log, 'log-06.txt'), 'a') as log_file:
-        log_file.write(mensagem + '\n')
+    try:
+        with open(os.path.join(diretorio_log, 'log-06.txt'), 'a') as log_file:
+            log_file.write(mensagem + '\n')
+    except Exception as e:
+        print('Erro ao gravar_log: ' + str(e))
+    raise e
 
 # Arquivos de download
 arquivos = dict_diretorio['.zip']
