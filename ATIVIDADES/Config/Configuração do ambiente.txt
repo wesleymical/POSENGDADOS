@@ -1,0 +1,36 @@
+-- Criação dos links simbólicos no Windows para não mover os arquivos para o GitHub, apenas estruturas e comandos:
+
+
+-- Copiar Arquivos:
+
+O comando xcopy está correto e incluirá subdiretórios e arquivos ocultos.
+
+-- Remover a Pasta de Origem:
+
+O comando rmdir /S /Q removerá a pasta de origem, permitindo a criação do link simbólico.
+
+-- Criar o Link Simbólico:
+
+O comando mklink /D criará um link simbólico para as pastas desejadas.
+
+
+
+--ARQUIVOS\ESTRUTURA_DADOS
+xcopy "C:\Users\mical\Documents\POSENGDADOS\ARQUIVOS\ESTRUTURA_DADOS\*" "C:\Users\mical\Documents\ARQUIVOS\ESTRUTURA_DADOS\" /s /e /v /i /h /y
+rmdir /S /Q "C:\Users\mical\Documents\POSENGDADOS\ARQUIVOS\ESTRUTURA_DADOS"
+mklink /D "C:\Users\mical\Documents\POSENGDADOS\ARQUIVOS\ESTRUTURA_DADOS" "C:\Users\mical\Documents\ARQUIVOS\ESTRUTURA_DADOS"
+
+--ARQUIVOS\MODELAGEM_DADOS
+xcopy "C:\Users\mical\Documents\POSENGDADOS\ARQUIVOS\MODELAGEM_DADOS\*" "C:\Users\mical\Documents\ARQUIVOS\MODELAGEM_DADOS\" /s /e /v /i /h /y
+rmdir /S /Q "C:\Users\mical\Documents\POSENGDADOS\ARQUIVOS\MODELAGEM_DADOS"
+mklink /D "C:\Users\mical\Documents\POSENGDADOS\ARQUIVOS\MODELAGEM_DADOS" "C:\Users\mical\Documents\ARQUIVOS\MODELAGEM_DADOS\"
+
+--REPOSITORIO\ESTRUTURA_DADOS
+xcopy "C:\Users\mical\Documents\POSENGDADOS\REPOSITORIO\ESTRUTURA_DADOS\*" "C:\Users\mical\Documents\REPOSITORIO\ESTRUTURA_DADOS\" /s /e /v /i /h /y
+rmdir /S /Q "C:\Users\mical\Documents\POSENGDADOS\REPOSITORIO\ESTRUTURA_DADOS"
+mklink /D "C:\Users\mical\Documents\POSENGDADOS\REPOSITORIO\ESTRUTURA_DADOS" "C:\Users\mical\Documents\REPOSITORIO\ESTRUTURA_DADOS\"
+
+--REPOSITORIO\MODELAGEM_DADOS
+xcopy "C:\Users\mical\Documents\POSENGDADOS\REPOSITORIO\MODELAGEM_DADOS\*" "C:\Users\mical\Documents\REPOSITORIO\MODELAGEM_DADOS\" /s /e /v /i /h /y
+rmdir /S /Q "C:\Users\mical\Documents\POSENGDADOS\REPOSITORIO\MODELAGEM_DADOS"
+mklink /D "C:\Users\mical\Documents\POSENGDADOS\REPOSITORIO\MODELAGEM_DADOS" "C:\Users\mical\Documents\REPOSITORIO\MODELAGEM_DADOS\"
