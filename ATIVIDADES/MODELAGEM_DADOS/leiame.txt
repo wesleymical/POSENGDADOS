@@ -1,0 +1,9 @@
+Dica 01 - Os arquivos a serem trabalhados, encontram-se desnormalizado, aqui que começam as atividades;
+
+Dica 02 – Lembre-se de aplicar as técnicas que aprendemos durante as aulas. Criação de Domínios, valores default, datas para identificar quando o registro foi criado ou alterado, SCD entre outros;
+
+Dica 03 – Pense fora da caixinha, tanto como analista e como usuário final; 
+
+Dica 04 – Faça rascunhos antes de implementar a modelagem;
+
+Dica 05 – Não precisa importar os dados, a análise deverá ser realizada sobre os arquivos.

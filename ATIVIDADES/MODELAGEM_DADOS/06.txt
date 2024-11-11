@@ -1,0 +1,6 @@
+PENDENTE
+
+06 – Ao finalizar a modelagem relacional, 
+    é o momento de construir o Modelo Multidimensional. 
+    Nessa etapa a construção deverá ser pensada sobre a construção de Dimensões e Fatos, 
+    lembre-se que pode ser uma modelagem no formato Star Schema ou Snowflake.
