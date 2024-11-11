@@ -1,0 +1,69 @@
+Definição de Atributos e Chaves:
+
+1. ELEICAO
+Atributos: ANO_ELEICAO, CD_ELEICAO (PK), DS_ELEICAO, DT_ELEICAO, NM_TIPO_ELEICAO, NR_TURNO, TP_ABRANGENCIA, CD_TIPO_ELEICAO
+
+Relacionamento: Uma eleição pode ter muitos candidatos.
+
+Cardinalidade: 1:N (Uma eleição pode ter muitos candidatos).
+
+2. CANDIDATO
+Atributos: CD_COR_RACA, CD_ELEICAO (FK), CD_ESTADO_CIVIL, CD_GENERO, CD_GRAU_INSTRUCAO, CD_OCUPACAO, CD_SITUACAO_DIPLOMA, DS_COR_RACA, DS_EMAIL, DS_ESTADO_CIVIL, DS_GENERO, DS_GRAU_INSTRUCAO, DS_OCUPACAO, DS_SITUACAO_DIPLOMA, DS_URL, DT_NASCIMENTO, NM_CANDIDATO, NM_SOCIAL_CANDIDATO, NR_CPF_CANDIDATO, NR_ORDEM_REDE_SOCIAL, NR_TITULO_ELEITORAL_CANDIDATO, SG_UF_NASCIMENTO, SQ_CANDIDATO (PK), TP_AGREMIACAO, NM_URNA_CANDIDATO, NR_CANDIDATO
+
+Relacionamentos:
+
+Um candidato pode receber votos em várias zonas.
+
+Cada candidato tem uma declaração de bens.
+
+Cada candidato participa de apenas uma eleição.
+
+Cardinalidade:
+
+Candidato e Eleição: N:1 (Muitos candidatos podem participar de uma eleição).
+
+Candidato e Votação Zona: 1:N (Um candidato pode receber votos em várias zonas).
+
+Candidato e Bens: 1:1 (Cada candidato tem uma declaração de bens).
+
+3. VOTACAO_ZONA
+Atributos: CD_MUNICIPIO, NM_MUNICIPIO, NM_UE, NR_ZONA, SG_UE, SG_UF, SQ_CANDIDATO (FK), QT_VOTOS_NOMINAIS, QT_VOTOS_NOMINAIS_VALIDOS, CD_CARGO, DS_CARGO, ANO_ELEICAO, CD_DETALHE_SITUACAO_CAND, CD_SIT_TOT_TURNO, CD_SITUACAO_CANDIDATURA, CD_SITUACAO_CASSACAO, CD_SITUACAO_JULGAMENTO, DS_DETALHE_SITUACAO_CAND, DS_SIT_TOT_TURNO, DS_SITUACAO_CANDIDATURA, DS_SITUACAO_CASSACAO, DS_SITUACAO_JULGAMENTO
+
+Relacionamento: Cada voto em uma zona é associado a um único candidato.
+
+Cardinalidade: N:1 (Cada voto em uma zona é associado a um único candidato).
+
+4. PARTIDO
+Atributos: NR_PARTIDO (PK), SG_PARTIDO, NM_PARTIDO
+
+Relacionamento: Um partido pode ter muitos candidatos, mas cada candidato é associado a apenas um partido.
+
+Cardinalidade: 1:N (Um partido pode ter muitos candidatos).
+
+5. COLIGACAO
+Atributos: SQ_COLIGACAO (PK), NM_COLIGACAO, DS_COMPOSICAO_COLIGACAO
+
+Relacionamento: Uma coligação pode apoiar muitos candidatos, mas cada candidato é apoiado por uma única coligação (ou nenhuma).
+
+Cardinalidade: 1:N (Uma coligação pode apoiar muitos candidatos).
+
+6. FEDERACAO
+Atributos: NR_FEDERACAO (PK), NM_FEDERACAO, SG_FEDERACAO, DS_COMPOSICAO_FEDERACAO
+
+Relacionamento: Uma federação pode incluir muitos partidos, mas cada partido pertence a apenas uma federação (ou nenhuma).
+
+Cardinalidade: 1:N (Uma federação pode incluir muitos partidos).
+
+7. BEM_CANDIDATO
+Atributos: SQ_CANDIDATO (FK), CD_TIPO_BEM_CANDIDATO, DS_TIPO_BEM_CANDIDATO, DS_BEM_CANDIDATO, VR_BEM_CANDIDATO, DT_ULT_ATUAL_BEM_CANDIDATO, HH_ULT_ATUAL_BEM_CANDIDATO, NR_ORDEM_BEM_CANDIDATO
+
+Relacionamento: Cada declaração de bens pertence a um único candidato.
+
+Cardinalidade: 1:1 (Cada declaração de bem pertence a um único candidato).
+
+8. MOTIVO_CASSACAO
+Atributos: SQ_CANDIDATO (FK), CD_MOTIVO (PK), DS_MOTIVO, TP_MOTIVO, DS_TP_MOTIVO
+
+Relacionamento: Um candidato pode ter um motivo de cassação (ou nenhum) e um motivo pode se aplicar a vários candidatos.
+
+Cardinalidade: N:1 (Um motivo pode se aplicar a vários candidatos).
