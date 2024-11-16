@@ -1,20 +1,15 @@
 -- Criação dos links simbólicos no Windows para não mover os arquivos para o GitHub, apenas estruturas e comandos:
 
-
 -- Copiar Arquivos:
-
-O comando xcopy está correto e incluirá subdiretórios e arquivos ocultos.
+O comando "xcopy" incluirá subdiretórios e arquivos ocultos.
 
 -- Remover a Pasta de Origem:
-
-O comando rmdir /S /Q removerá a pasta de origem, permitindo a criação do link simbólico.
+O comando "rmdir /S /Q" removerá a pasta de origem, permitindo a criação do link simbólico.
 
 -- Criar o Link Simbólico:
+O comando "mklink /D" criará um link simbólico para as pastas desejadas.
 
-O comando mklink /D criará um link simbólico para as pastas desejadas.
-
-
-
+======================== NT-MAGOSUPORTE ===================================================================================================
 --ARQUIVOS\ESTRUTURA_DADOS
 xcopy "C:\Users\mical\Documents\POSENGDADOS\ARQUIVOS\ESTRUTURA_DADOS\*" "C:\Users\mical\Documents\ARQUIVOS\ESTRUTURA_DADOS\" /s /e /v /i /h /y
 rmdir /S /Q "C:\Users\mical\Documents\POSENGDADOS\ARQUIVOS\ESTRUTURA_DADOS"
@@ -34,3 +29,16 @@ mklink /D "C:\Users\mical\Documents\POSENGDADOS\REPOSITORIO\ESTRUTURA_DADOS" "C:
 xcopy "C:\Users\mical\Documents\POSENGDADOS\REPOSITORIO\MODELAGEM_DADOS\*" "C:\Users\mical\Documents\REPOSITORIO\MODELAGEM_DADOS\" /s /e /v /i /h /y
 rmdir /S /Q "C:\Users\mical\Documents\POSENGDADOS\REPOSITORIO\MODELAGEM_DADOS"
 mklink /D "C:\Users\mical\Documents\POSENGDADOS\REPOSITORIO\MODELAGEM_DADOS" "C:\Users\mical\Documents\REPOSITORIO\MODELAGEM_DADOS\"
+
+========================= NT-WMICAL =========================================================================================================
+--ARQUIVOS\ESTRUTURA_DADOS
+mklink /D "D:\mical\Documents\GitHub\POSENGDADOS\ARQUIVOS\ESTRUTURA_DADOS" "D:\mical\Documents\POS ENGENHARIA DE DADOS\POSENGDADOS\ARQUIVOS\ESTRUTURA_DADOS"
+
+--ARQUIVOS\MODELAGEM_DADOS
+mklink /D "D:\mical\Documents\GitHub\POSENGDADOS\ARQUIVOS\MODELAGEM_DADOS" "D:\mical\Documents\POS ENGENHARIA DE DADOS\POSENGDADOS\ARQUIVOS\MODELAGEM_DADOS\"
+
+--REPOSITORIO\ESTRUTURA_DADOS
+mklink /D "D:\mical\Documents\GitHub\POSENGDADOS\REPOSITORIO\ESTRUTURA_DADOS" "D:\mical\Documents\POS ENGENHARIA DE DADOS\POSENGDADOS\REPOSITORIO\ESTRUTURA_DADOS\"
+
+--REPOSITORIO\MODELAGEM_DADOS
+mklink /D "D:\mical\Documents\GitHub\POSENGDADOS\REPOSITORIO\MODELAGEM_DADOS" "D:\mical\Documents\POS ENGENHARIA DE DADOS\POSENGDADOS\REPOSITORIO\MODELAGEM_DADOS\"
