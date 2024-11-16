@@ -1,0 +1,14 @@
+Atividade 03 - A partir do arquivo REDE_SOCIAL, gerar o script para criação das tabelas
+
+1 - Rede Social;
+2 - UF (Aproveitar a mesma tabela criada na Atividade 01);
+3 - Tipo de Rede Social;
+4 - Eleição (Aproveitar a mesma tabela criada na Atividade 01);
+5 - Candidato (Aproveitar a mesma tabela criada na Atividade 01).
+
+A tabela REDE SOCIAL, deverá possuir apenas os atributos que você julgar ser de uma REDE SOCIAL e as chaves de relacionamento com as demais tabelas. Não estamos falando de fatos e dimensões, são tabelas normais.
+
+Entregáveis:
+
+1 – Script para criação das tabelas;
+2 – Script para inserção dos registros.

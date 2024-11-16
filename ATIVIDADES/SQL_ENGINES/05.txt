@@ -1,0 +1,9 @@
+Atividade 05 – Analisando a tabela de CANDIDATO, o cliente solicitou uma lista contendo o total de candidatos concorrendo ao cargo de VEREADOR. É necessário criar um ranking para identificar os estados com o maior número de candidatos até os que possuem o menor número.
+
+Atividade 06 – Analisando a tabela de VOTAÇÃO, precisamos contabilizar o total de votos da cidade que você reside para o cargo de PREFEITO. Certifique-se de identificar a situação de turno de cada candidato.
+
+Atividade 07 – Analisando a tabela de BENS DE CANDIDATO, é necessário identificar o patrimônio total dos candidatos aos cargos de VEREADOR, PREFEITO e VICE-PREFEITO. Após essa análise, identifique o bem de maior valor e classifique o candidato conforme o patrimônio total nas seguintes categorias:
+
+Patrimônio entre 0 e 999.999,99 – Candidato com Patrimônio Normal
+Patrimônio entre 1.000.000,00 e 999.999.999,99 – Candidato com Patrimônio Milionário
+Patrimônio maior que 1.000.000.000,00 – Candidato com Patrimônio Bilionário

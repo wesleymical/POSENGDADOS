@@ -1,0 +1,17 @@
+Atividade 01 - A partir do arquivo de CANDIDATOS, gerar o script para criação e carga das tabelas: 
+
+1 – Candidato;
+2 – UF;
+3 – Cargo;
+4 – Situação Candidatura;
+5 – Partido;
+6 – Grau de Instrução;
+7 – Ocupação;
+8 – Eleição.
+
+A tabela CANDIDATO, deverá possuir apenas os atributos que você julgar ser de um CANDIDATO e as chaves de relacionamento com as demais tabelas. Não estamos falando de fatos e dimensões, são tabelas normais.
+
+Entregáveis:
+
+1 – Script para criação das tabelas;
+2 – Script para inserção dos registros.

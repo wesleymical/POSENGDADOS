@@ -1,6 +1,40 @@
-PENDENTE
+OBSERVACAO: Toad Data Modeler nao existe mais esse programa, existe um erwin mas que nao tem versao Trial, 
+    entao ficou mais dificil realizar a modelagem.
 
-06 – Ao finalizar a modelagem relacional, 
-    é o momento de construir o Modelo Multidimensional. 
-    Nessa etapa a construção deverá ser pensada sobre a construção de Dimensões e Fatos, 
-    lembre-se que pode ser uma modelagem no formato Star Schema ou Snowflake.
+erDiagram
+    Fato_Eleicao {
+        int ID_Eleicao
+        int ID_Tempo
+        int ID_Candidato
+        int ID_Zona
+        int Numero_Votos
+    }
+    Dim_Tempo {
+        int ID_Tempo
+        date Data
+        int Mes
+        int Ano
+    }
+    Dim_Candidato {
+        int ID_Candidato
+        varchar Nome_Candidato
+        varchar Partido
+        varchar Cor_Raca
+        date Data_Nascimento
+    }
+    Dim_Eleicao {
+        int ID_Eleicao
+        varchar Tipo_Eleicao
+        int Ano_Eleicao
+        int Turno
+    }
+    Dim_Zona {
+        int ID_Zona
+        varchar Municipio
+        int Numero_Zona
+    }
+
+    Fato_Eleicao ||--o{ Dim_Tempo: ID_Tempo
+    Fato_Eleicao ||--o{ Dim_Candidato: ID_Candidato
+    Fato_Eleicao ||--o{ Dim_Eleicao: ID_Eleicao
+    Fato_Eleicao ||--o{ Dim_Zona: ID_Zona

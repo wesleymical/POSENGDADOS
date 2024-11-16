@@ -1,5 +1,0 @@
-PENDENTE
-
-05– Pensando em uma Modelagem Relacional, depois da construção do DER, 
-    chegou a hora de realizar a construção do Modelo Lógico. Após realizar a modelagem, 
-    enviar o script para criação do Modelo Físico.
