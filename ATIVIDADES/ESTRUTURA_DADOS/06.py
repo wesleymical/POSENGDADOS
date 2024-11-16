@@ -13,11 +13,14 @@ list_uf = [
 ]
 
 # Dicionário de diretórios por tipo de arquivo
+# Mais de um ambiente de desenvolvimento com estruturas diferentes
+diretorio_atual = os.getcwd()
+
 dict_diretorio = {
-    '.csv': 'C:/Users/mical/Documents/POSENGDADOS/REPOSITORIO/ESTRUTURA_DADOS',
-    '.zip': 'C:/Users/mical/Documents/POSENGDADOS/ARQUIVOS/ESTRUTURA_DADOS',
-    '.pdf': 'C:/Users/mical/Documents/POSENGDADOS/REPOSITORIO/ESTRUTURA_DADOS',
-    'outros': 'C:/Users/mical/Documents/POSENGDADOS/REPOSITORIO/ESTRUTURA_DADOS/OUTROS'
+    '.csv': diretorio_atual +'/REPOSITORIO/ESTRUTURA_DADOS',
+    '.zip': diretorio_atual +'/ARQUIVOS/ESTRUTURA_DADOS',
+    '.pdf': diretorio_atual +'/REPOSITORIO/ESTRUTURA_DADOS',
+    'outros': diretorio_atual +'/REPOSITORIO/ESTRUTURA_DADOS/OUTROS'
 }
 
 # Função para gravar logs em log.txt
