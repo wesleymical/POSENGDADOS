@@ -32,12 +32,12 @@ def main():
     cabecalho_relacao_candidatos_area, dados_relacao_candidatos_area = ler_cabecalho_e_dados_csv(caminho_arquivo_votacao)
 
     # Imprimir os cabeçalhos e a segunda linha
-    print("Cabeçalho Bens dos Candidatos:", cabecalho_bem_candidato)
-    print(dados_bem_candidato)
-    #print("Cabeçalho Redes Sociais:", cabecalho_redes_sociais)
-    #print("Dados Redes Sociais:", dados_redes_sociais)
-    #print("Cabeçalho Relação Candidatos x Área de Votação:", cabecalho_relacao_candidatos_area)
-    #print("Dados Relação Candidatos x Área de Votação:", dados_relacao_candidatos_area)
+    #print(cabecalho_bem_candidato)
+    #print(dados_bem_candidato)
+    #print(cabecalho_redes_sociais)
+    #print(dados_redes_sociais)
+    print(cabecalho_relacao_candidatos_area)
+    print(dados_relacao_candidatos_area)
 
 # Função para ler o cabeçalho e a segunda linha de um arquivo CSV
 def ler_cabecalho_e_dados_csv(param):
