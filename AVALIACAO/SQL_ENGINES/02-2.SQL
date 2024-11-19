@@ -2,7 +2,7 @@
 IF OBJECT_ID('dbo.STAGING_BEM_CANDIDATO', 'U') IS NOT NULL
 DROP TABLE dbo.STAGING_BEM_CANDIDATO;
 
--- Criação da tabela STAGING com as colunas do cabeçalho fornecido
+-- Criação da tabela STAGING com todas as colunas do arquivo CSV
 CREATE TABLE STAGING_BEM_CANDIDATO (
     DT_GERACAO VARCHAR(255),
     HH_GERACAO VARCHAR(255),

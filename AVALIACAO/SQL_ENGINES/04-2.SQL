@@ -4,7 +4,7 @@ BEGIN
     DROP TABLE dbo.STAGING_VOTACAO;
 END
 
--- Criar a tabela STAGING com as colunas do cabeçalho fornecido
+-- Criação da tabela STAGING com todas as colunas do arquivo CSV
 CREATE TABLE STAGING_VOTACAO (
     DT_GERACAO VARCHAR(255),
     HH_GERACAO VARCHAR(255),
@@ -132,7 +132,7 @@ SET
     CD_SIT_TOT_TURNO = REPLACE(CD_SIT_TOT_TURNO, '"', ''),
     DS_SIT_TOT_TURNO = REPLACE(DS_SIT_TOT_TURNO, '"', '');
 
-    -- Inserir dados tratados na tabela AJUSTADO
+ -- Inserir dados tratados na tabela AJUSTADO
 INSERT INTO AJUSTADO (
     DT_GERACAO,
     HH_GERACAO,

@@ -1,4 +1,4 @@
--- Verificar se a procedure já existe e, em caso positivo, removê-la
+-- Verificar se a procedure já existe
 IF OBJECT_ID('dbo.sp_ExibirCandidatosPorUF', 'P') IS NOT NULL
     DROP PROCEDURE dbo.sp_ExibirCandidatosPorUF;
 GO
@@ -8,11 +8,11 @@ CREATE PROCEDURE dbo.sp_ExibirCandidatosPorUF
     @UF VARCHAR(2)
 AS
 BEGIN
-    -- Limpar a tabela temporária, caso já exista
+    -- Limpar a tabela temporária
     IF OBJECT_ID('tempdb..#CandidatosUF') IS NOT NULL
         DROP TABLE #CandidatosUF;
 
-    -- Criar tabela temporária para armazenar os resultados
+    -- Criar tabela temporária
     CREATE TABLE #CandidatosUF (
         SQ_CANDIDATO BIGINT,
         NM_CANDIDATO VARCHAR(255),

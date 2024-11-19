@@ -4,7 +4,7 @@ BEGIN
     DROP TABLE dbo.STAGING_REDE_SOCIAL;
 END
 
--- Criar a tabela STAGING com as colunas do cabeçalho fornecido
+-- Criação da tabela STAGING com todas as colunas do arquivo CSV
 CREATE TABLE STAGING_REDE_SOCIAL (
     DT_GERACAO VARCHAR(255),
     HH_GERACAO VARCHAR(255),
@@ -52,7 +52,7 @@ SET
     NR_ORDEM_REDE_SOCIAL = REPLACE(NR_ORDEM_REDE_SOCIAL, '"', ''),
     DS_URL = REPLACE(DS_URL, '"', '');
 
--- Inserir dados tratados na tabela REDE_SOCIAL
+-- Inserir dados tratados na tabela AJUSTADO
 INSERT INTO AJUSTADO (
     DT_GERACAO, HH_GERACAO, AA_ELEICAO, SG_UF, CD_TIPO_ELEICAO, NM_TIPO_ELEICAO, CD_ELEICAO, SQ_CANDIDATO, NR_ORDEM_REDE_SOCIAL, DS_URL
 )
