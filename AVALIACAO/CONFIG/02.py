@@ -20,6 +20,7 @@ files_bem_candidato = 'bem_candidato_2024_AC.csv'
 files_redes = 'rede_social_candidato_2024_AC.csv'
 files_votacao = 'votacao_candidato_munzona_2024_AC.csv'
 
+#========================================================================================================================
 def main():
     # Caminhos completos dos arquivos
     caminho_arquivo_bem = os.path.join(sql_engines, dict_diretorio['BEM_CANDIDATO'], files_bem_candidato)
@@ -32,13 +33,14 @@ def main():
     cabecalho_relacao_candidatos_area, dados_relacao_candidatos_area = ler_cabecalho_e_dados_csv(caminho_arquivo_votacao)
 
     # Imprimir os cabeçalhos e a segunda linha
-    #print(cabecalho_bem_candidato)
-    #print(dados_bem_candidato)
-    #print(cabecalho_redes_sociais)
-    #print(dados_redes_sociais)
+    print(cabecalho_bem_candidato)
+    print(dados_bem_candidato)
+    print(cabecalho_redes_sociais)
+    print(dados_redes_sociais)
     print(cabecalho_relacao_candidatos_area)
     print(dados_relacao_candidatos_area)
 
+#=========================================================================================================================
 # Função para ler o cabeçalho e a segunda linha de um arquivo CSV
 def ler_cabecalho_e_dados_csv(param):
     with open(param, mode='r', encoding='Latin-1') as arquivo_csv:
@@ -47,6 +49,7 @@ def ler_cabecalho_e_dados_csv(param):
         dados = next(leitor_csv)
     return cabecalho, dados
 
+#========================================================================================================================
 # Execução do main
 if __name__ == "__main__":
     main()

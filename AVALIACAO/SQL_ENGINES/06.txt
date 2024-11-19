@@ -1,9 +1,0 @@
-Atividade 08 – Durante a análise dos dados de CANDIDATO, 
-é necessário identificar os candidatos a VEREADOR da cidade que foram eleitos e a quantidade de votos que receberam. 
-Em seguida, crie um ranking entre os eleitos, ordenando-os do candidato com o maior número de votos para o que recebeu o menor número.
-
-Atividade 09 – Precisamos criar uma VIEW que forneça todas as informações dos candidatos, 
-incluindo ocupação, partido, votos recebidos, valor dos bens e links para suas redes sociais.
-
-Atividade 10 – Precisamos criar uma PROCEDURE que receba como parâmetro a UF e exiba, em uma tabela, 
-as informações de todos os candidatos da UF informada. É importante que essa tabela seja limpa a cada execução da procedure.
